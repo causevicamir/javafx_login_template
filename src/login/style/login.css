@@ -1,0 +1,48 @@
+#login_scene {
+    -fx-background-color: black;
+}
+
+#x_btn {
+    -fx-background-color: black;
+}
+
+#inner_login_anchor {
+    -fx-border-style: solid;
+    -fx-border-width: 1px;
+    -fx-border-color: #00dc7f;
+}
+
+#username_input {
+    -fx-background-color:  #00dc7f, black ;
+    -fx-background-insets: 0, 0 0 1 0 ;
+    -fx-background-radius: 0 ;
+    -fx-text-inner-color: #00a861;
+    -fx-font-weight: bold;
+}
+#username_input:focused {
+    -fx-background-color: #00a861, black ;
+}
+
+#password_input {
+    -fx-background-color:  #00dc7f, black ;
+    -fx-background-insets: 0, 0 0 1 0 ;
+    -fx-background-radius: 0 ;
+    -fx-text-inner-color: #00a861;
+    -fx-font-weight: bold;
+}
+#password_input:focused {
+    -fx-background-color: #00a861, black ;
+}
+
+#signin_btn {
+    -fx-background-color:  #00dc7f, black ;
+    -fx-background-insets: 0, 1 1 1 1 ;
+    -fx-background-radius: 0 ;
+    -fx-text-fill: #00a861;
+}
+
+#signin_btn:focused {
+    -fx-background-color:  #00a861, black ;
+    -fx-background-insets: 0, 1 1 1 1 ;
+    -fx-background-radius: 0 ;
+}

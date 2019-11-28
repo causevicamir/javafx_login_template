@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="login_scene" prefHeight="400.0" prefWidth="280.0" stylesheets="@login.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.LoginController">
+
+   <Label layoutX="97.0" layoutY="6.0" text="Please sign in" textFill="#00a861" />
+   <Button mnemonicParsing="false" onAction="#closeLogin" text="X" textAlignment="CENTER" textFill="#00a861" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0" fx:id="x_btn">
+      <font>
+         <Font name="Courier New Bold" size="14.0" />
+      </font>
+   </Button>
+   <AnchorPane id="inner_login_anchor" layoutX="23.0" layoutY="37.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="30.0">
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="55.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../../resources/img/shield.png" />
+      </ImageView>
+      <Label fx:id="warning_label" alignment="CENTER" contentDisplay="CENTER" layoutX="112.0" layoutY="197.0" textAlignment="CENTER" textFill="#ff6969" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+         <font>
+            <Font size="12.0" />
+         </font></Label>
+      <TextField fx:id="username_input" alignment="CENTER" layoutX="45.0" layoutY="222.0" promptText="username" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="225.0" />
+      <PasswordField fx:id="password_input" alignment="CENTER" layoutX="45.0" layoutY="260.0" promptText="password" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="265.0" />
+      <Button id="signin_btn" layoutX="99.0" layoutY="297.0" mnemonicParsing="false" onAction="#verifyCredentials" text="Sign in" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="305.0" />
+   </AnchorPane>
+
+</AnchorPane>
